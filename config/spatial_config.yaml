@@ -1,0 +1,27 @@
+# ======================================================
+# Omics Core Standardized Pipeline Configuration
+# Spatial Transcriptomics (10x Visium)
+# ======================================================
+
+# -----------------------------
+# Input Data
+# -----------------------------
+raw_fastq_dir: /path/to/spatial/raw_fastq
+spaceranger_output_dir: /path/to/spatial/spaceranger_output
+
+# -----------------------------
+# Reference
+# -----------------------------
+spaceranger_reference: /path/to/refdata-gex-GRCh38-2020-A
+
+# -----------------------------
+# QC Parameters
+# -----------------------------
+min_counts: 500
+max_percent_mt: 20
+
+# -----------------------------
+# Execution Parameters
+# -----------------------------
+threads: 8
+memory_gb: 64
