@@ -1,0 +1,28 @@
+# ======================================================
+# Omics Core Standardized Pipeline Configuration
+# Single-Cell RNA-seq (10x Genomics)
+# ======================================================
+
+# -----------------------------
+# Input Data
+# -----------------------------
+raw_fastq_dir: /path/to/scrnaseq/raw_fastq
+cellranger_output_dir: /path/to/scrnaseq/cellranger_output
+
+# -----------------------------
+# Reference
+# -----------------------------
+cellranger_reference: /path/to/refdata-gex-GRCh38-2020-A
+
+# -----------------------------
+# QC Parameters
+# -----------------------------
+min_features: 200
+max_features: 5000
+max_percent_mt: 20
+
+# -----------------------------
+# Execution Parameters
+# -----------------------------
+threads: 8
+memory_gb: 64
